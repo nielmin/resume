@@ -83,7 +83,7 @@
 
 #project(
   name: "WeatherApp",
-  role: "Backend Developer"
+  role: "Backend Developer",
   url: "github.com/GuntherCoad/UI_WeatherApp",
 )
 - Final project for CS 4393 - User Interfaces using Python Flask.

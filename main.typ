@@ -42,13 +42,13 @@
 == Education
 
 #edu(
-  institution: "Harvey Mudd College",
-  location: "Claremont, CA",
-  dates: dates-helper(start-date: "Aug 2023", end-date: "May 2027"),
-  degree: "Bachelor's of Science, Computer Science and Mathematics",
+  institution: "University of Texas at San Antonio",
+  location: "San Antonio, TX",
+  dates: dates-helper(start-date: "Aug 2021", end-date: "August 2024"),
+  degree: "Bachelor's of Science, Computer Science",
 )
-- Cumulative GPA: 4.0\/4.0 | Dean's List, Harvey S. Mudd Merit Scholarship, National Merit Scholarship
-- Relevant Coursework: Data Structures, Program Development, Microprocessors, Abstract Algebra I: Groups and Rings, Linear Algebra, Discrete Mathematics, Multivariable & Single Variable Calculus, Principles and Practice of Comp Sci
+- Cumulative GPA: 3.73\/4.0 | Dean's List, Honor Roll
+- Relevant Coursework: Data Structures, Cloud Computing, Web Technologies, Software Engineering, Database Systems  
 
 == Work Experience
 

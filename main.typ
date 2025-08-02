@@ -82,6 +82,15 @@
 == Projects
 
 #project(
+  name: "WeatherApp",
+  role: "Backend Developer"
+  url: "github.com/GuntherCoad/UI_WeatherApp",
+)
+- Final project for CS 4393 - User Interfaces using Python Flask.
+- Developed app's endpoints to fetch forecast information from OpenMeteo API.
+- Built app's frontend scaffolding using Jinja2 templates.
+
+#project(
   name: "dotfiles",
   url: "github.com/nielmin/dotfiles",
 )

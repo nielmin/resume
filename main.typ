@@ -60,7 +60,7 @@
 )
 - Built a PowerBI dashboard using HERD and IPEDS data with Python `pandas` and `numpy` libraries. 
 - Responsible for the disposal and recording of sensitive financial documents pertaining to UTSA grants and scholarships.
-- Helped organize university documents to easily accessible to coworkers. 
+- Organized university documents to easily accessible to coworkers. 
 
 #work(
   title: "Dishwasher",
@@ -77,7 +77,7 @@
   company: "Freelance, Remote",
   dates: dates-helper(start-date: "June 2020", end-date: "August 2020"),
 )
-- Commissioned by a family member to review their dissertation for grammatical and structural errors.
+- Reviewed a family member's dissertation for grammatical and structural errors.
 
 == Projects
 

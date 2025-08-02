@@ -21,7 +21,7 @@
   phone: phone,
   // personal-site: personal-site,
   accent-color: "#26428b",
-  font: "New Computer Modern",
+  font: "Atkinson Hyperlegible",
   paper: "us-letter",
   author-position: left,
   personal-info-position: left,
@@ -99,3 +99,8 @@
   url: "github.com/nielmin/nielmin.github.io",
 )
 - A WIP personal blog developed using `11ty`, a static site generator.
+
+== Skills
+
+- *Programming Languages*: Go, Python, C, HTML/CSS, Bash
+- *Technologies*: Git, UNIX, Docker, Caddy, NGINX

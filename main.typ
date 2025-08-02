@@ -53,11 +53,28 @@
 == Work Experience
 
 #work(
-  title: "Subatomic Shepherd and Caffeine Connoisseur",
-  location: "Atomville, CA",
-  company: "Microscopic Circus, Schrodinger's University",
-  dates: dates-helper(start-date: "May 2024", end-date: "Present"),
+  title: "Student Assistant",
+  location: "San Antonio, TX",
+  company: "Graduate School & Research Building, UTSA",
+  dates: dates-helper(start-date: "August 2021", end-date: "May 2023"),
 )
-- more bullet points go here
+- Built a PowerBI dashboard using HERD and IPEDS data with Python `pandas` and `numpy` libraries. 
+- Responsible for the disposal and recording of sensitive financial documents pertaining to UTSA grants and scholarships.
+- Helped organize university documents to easily accessible to coworkers. 
 
-// ... more headers and stuff below
+#work(
+  title: "Dishwasher",
+  location: "San Antonio, TX",
+  company: "Las Palapas, San Antonio, TX",
+  dates: dates-helper(start-date: "June 2021", end-date: "July 2021"),
+)
+- Oversaw the cleanliness of incoming dishes, silverware, and kitchen equipment.
+- Responsible for the general state of the kitchen near closing time, such as taking out the trash and mopping the floor.
+
+#work(
+  title: "Editor/Proofreader",
+  location: "San Antonio, TX",
+  company: "Freelance, Remote",
+  dates: dates-helper(start-date: "June 2020", end-date: "August 2020"),
+)
+- Commissioned by a family member to review their dissertation for grammatical and structural errors.

@@ -78,3 +78,24 @@
   dates: dates-helper(start-date: "June 2020", end-date: "August 2020"),
 )
 - Commissioned by a family member to review their dissertation for grammatical and structural errors.
+
+== Projects
+
+#project(
+  name: "dotfiles",
+  url: "github.com/nielmin/dotfiles",
+)
+- Personal configurations for my development tools such as neovim, emacs, bash, tmux, etc..
+
+#project(
+  name: "NixOS Configuration",
+  url: "github.com/nielmin/nixos-config",
+)
+- Personal NixOS configuration for my desktop, laptop, and servers.
+- Infrastructure as Code (IaC) to declaratively reproduce my personal machines and dotfiles using the `nix` language and `home-manager`.
+
+#project(
+  name: "Personal website",
+  url: "github.com/nielmin/nielmin.github.io",
+)
+- A WIP personal blog developed using `11ty`, a static site generator.

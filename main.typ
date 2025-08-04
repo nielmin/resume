@@ -21,7 +21,7 @@
   phone: phone,
   // personal-site: personal-site,
   accent-color: "#26428b",
-  font: "Atkinson Hyperlegible",
+  font: "New Computer Modern",
   paper: "us-letter",
   author-position: left,
   personal-info-position: left,

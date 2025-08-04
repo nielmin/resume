@@ -48,7 +48,6 @@
   degree: "Bachelor's of Science, Computer Science",
 )
 - Cumulative GPA: 3.73\/4.0 | Dean's List, Honor Roll
-- Relevant Coursework: Data Structures, Cloud Computing, Web Technologies, Software Engineering, Database Systems  
 
 == Work Experience
 

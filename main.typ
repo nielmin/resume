@@ -62,23 +62,6 @@
 - Responsible for the disposal and recording of sensitive financial documents pertaining to UTSA grants and scholarships.
 - Organized university documents to easily accessible to coworkers. 
 
-#work(
-  title: "Dishwasher",
-  location: "San Antonio, TX",
-  company: "Las Palapas, San Antonio, TX",
-  dates: dates-helper(start-date: "June 2021", end-date: "July 2021"),
-)
-- Oversaw the cleanliness of incoming dishes, silverware, and kitchen equipment.
-- Responsible for the general state of the kitchen near closing time, such as taking out the trash and mopping the floor.
-
-#work(
-  title: "Editor/Proofreader",
-  location: "San Antonio, TX",
-  company: "Freelance, Remote",
-  dates: dates-helper(start-date: "June 2020", end-date: "August 2020"),
-)
-- Reviewed a family member's dissertation for grammatical and structural errors.
-
 == Projects
 
 #project(

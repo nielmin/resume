@@ -95,3 +95,5 @@
 
 - *Programming Languages*: Go, Python, C, HTML/CSS, Bash
 - *Technologies*: Git, UNIX, Docker, Caddy, NGINX
+- *Virtualization*: QEMU/KVM, Proxmox, LXC
+- *Networking*: NFS, Samba/CIFS, DNS

@@ -64,8 +64,8 @@
 == Projects
 
 #project(
-  name: "WeatherApp",
-  role: "Backend Developer",
+  name: "Backend Developer",
+  role: "WeatherApp",
   url: "github.com/GuntherCoad/UI_WeatherApp",
 )
 - Final project for CS 4393 - User Interfaces using Python Flask.

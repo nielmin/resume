@@ -3,7 +3,7 @@
 // Put your personal information here, replacing mine
 #let name = "Daniel Hwang"
 #let location = "San Antonio, TX"
-#let email = "contact@danhwa.com"
+#let email = "danhwa13@gmail.com"
 #let github = "github.com/nielmin"
 // #let linkedin = "linkedin.com/in/stuxf"
 #let phone = "+1 (210) 636-8489"

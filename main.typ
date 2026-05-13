@@ -99,6 +99,12 @@
 )
 - Personal configurations for my development tools such as neovim, emacs, bash, tmux, etc..
 
+#project(
+  name: "resume",
+  url: "github.com/nielmin/resume",
+)
+- Personal resume written in typst.
+
 == Skills
 
 - *Programming Languages*: Go, Python, C, HTML/CSS, Bash

@@ -64,19 +64,10 @@
 == Projects
 
 #project(
-  name: "Backend Developer",
-  role: "WeatherApp",
-  url: "github.com/GuntherCoad/UI_WeatherApp",
+  name: "gryt",
+  url: "github.com/nielmin/gryt",
 )
-- Final project for CS 4393 - User Interfaces using Python Flask.
-- Developed app's endpoints to fetch forecast information from OpenMeteo API.
-- Built app's frontend scaffolding using Jinja2 templates.
-
-#project(
-  name: "dotfiles",
-  url: "github.com/nielmin/dotfiles",
-)
-- Personal configurations for my development tools such as neovim, emacs, bash, tmux, etc..
+- A simple CLI app that converts a YouTube channel URL to an RSS feed.
 
 #project(
   name: "NixOS Configuration",
@@ -86,10 +77,22 @@
 - Infrastructure as Code (IaC) to declaratively reproduce my personal machines and dotfiles using the `nix` language and `home-manager`.
 
 #project(
+  name: "Fedora CoreOS",
+  url: "github.com/nielmin/fcos",
+)
+- Infrastructure as Code (IaC) to deploy a public reverse proxy to safely access my homelab and bypass CGNAT.
+
+#project(
   name: "Personal website",
   url: "github.com/nielmin/nielmin.github.io",
 )
-- A WIP personal blog developed using `11ty`, a static site generator.
+- A personal blog using `11ty`, a static site generator.
+
+#project(
+  name: "dotfiles",
+  url: "github.com/nielmin/dotfiles",
+)
+- Personal configurations for my development tools such as neovim, emacs, bash, tmux, etc..
 
 == Skills
 

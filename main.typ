@@ -81,17 +81,17 @@
 - Infrastructure as Code (IaC) to declaratively reproduce my personal machines and dotfiles using the `nix` language and `home-manager`.
 
 #project(
+  name: "Personal website",
+  url: "github.com/nielmin/nielmin.github.io",
+)
+- A personal blog using `11ty`, a static site generator.
+
+#project(
   name: "Fedora CoreOS",
   url: "github.com/nielmin/fcos",
 )
 - A set of butane files that deploy either a Caddy or Traefik reverse proxy.
 - Automatic compliation of ignition files using GitHub Actions to bootstrap a CoreOS installer.
-
-#project(
-  name: "Personal website",
-  url: "github.com/nielmin/nielmin.github.io",
-)
-- A personal blog using `11ty`, a static site generator.
 
 #project(
   name: "dotfiles",

@@ -98,6 +98,6 @@
 == Skills
 
 - *Programming Languages*: Go, Python, C, HTML/CSS, Bash
-- *Technologies*: Git, UNIX, Docker, Caddy, NGINX
+- *Technologies*: Git, UNIX, Docker/Podman, Caddy, NGINX, Traefik
 - *Virtualization*: QEMU/KVM, Proxmox, LXC
 - *Networking*: NFS, Samba/CIFS, DNS

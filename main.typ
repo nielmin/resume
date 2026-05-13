@@ -80,7 +80,8 @@
   name: "Fedora CoreOS",
   url: "github.com/nielmin/fcos",
 )
-- Infrastructure as Code (IaC) to deploy a public reverse proxy to safely access my homelab and bypass CGNAT.
+- A set of butane files that deploy either a Caddy or Traefik reverse proxy.
+- Automatic compliation of ignition files using GitHub Actions to bootstrap a CoreOS installer.
 
 #project(
   name: "Personal website",

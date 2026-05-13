@@ -49,6 +49,10 @@
 )
 - Cumulative GPA: 3.73\/4.0 | Dean's List, Honor Roll
 
+== Certifications
+
+#generic-one-by-two(left: "CCNA - Cisco Certified Network Associate", right: "March 2026")
+
 == Work Experience
 
 #work(

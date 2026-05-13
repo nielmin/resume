@@ -7,7 +7,7 @@
 #let github = "github.com/nielmin"
 // #let linkedin = "linkedin.com/in/stuxf"
 #let phone = "+1 (210) 636-8489"
-//#let personal-site = "stuxf.dev"
+#let personal-site = "https://nielmin.github.io"
 
 #show: resume.with(
   author: name,
@@ -19,7 +19,7 @@
   github: github,
   // linkedin: linkedin,
   phone: phone,
-  // personal-site: personal-site,
+  personal-site: personal-site,
   accent-color: "#26428b",
   font: "New Computer Modern",
   paper: "us-letter",

@@ -12,7 +12,7 @@ jobs:
       - uses: typst-community/setup-typst@v5
       - run: typst compile main.typ resume.pdf
 
-      - uses: actions/upload-artifacts@v6
+      - uses: actions/upload-artifact@v6
         with:
           name: resume
           path: resume.pdf

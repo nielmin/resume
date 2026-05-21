@@ -20,11 +20,11 @@ jobs:
         run: |
           TAG=$(date +'%Y.%m.%d')
           echo "Generated tag: $TAG"
-          echo "tag=$TAG >> $GITHUB_OUTPUT"
+          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
 
       - name: Create git tag
         run: |
-          echo "Output tag: '${{ steps.tag.outputs.tag }}'"
+          echo "${{ steps.tag.outputs.tag }}"
           git tag "${{ steps.tag.outputs.tag }}"
           git push origin "${{ steps.tag.outputs.tag }}"
 

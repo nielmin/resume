@@ -1,4 +1,4 @@
-name: Rendir typst resume
+name: Render typst resume
 
 on:
   push:

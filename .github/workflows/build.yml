@@ -1,0 +1,26 @@
+name: Build typst resume
+
+on: push
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Build resume
+        uses: typst-community/setup-typst@v5
+        run: typst compile main.typ resume.pdf
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v6
+        with:
+          name: resume
+          path: resume.pdf
+
+      - name: Release
+        uses: softprops/action-gh-release@v3
+        if: github.ref_type == 'tag'
+        with:
+          files: resume.pdf

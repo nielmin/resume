@@ -9,8 +9,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
-      - name: Build resume
-        uses: typst-community/setup-typst@v5
+      - uses: typst-community/setup-typst@v5
         run: typst compile main.typ resume.pdf
 
       - name: Generate tag

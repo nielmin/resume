@@ -16,3 +16,7 @@ jobs:
         with:
           name: resume
           path: resume.pdf
+
+      - uses: ncipollo/release-action@v1
+        with:
+          artifacts: "resume"

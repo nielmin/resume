@@ -12,6 +12,17 @@ jobs:
       - name: Build resume
         uses: typst-community/setup-typst@v5
         run: typst compile main.typ resume.pdf
+      
+      - name: Generate tag
+        id: tag
+        run: |
+          TAG="$(date +'%Y.%m.%m')"
+          echo "tag=$TAG >> $GITHUB_OUTPUT
+
+      - name: Create git tag
+        run: |
+          git tag ${{ steps.tag.outputs.tag }}
+          git push origin ${{ steps.tag.outputs.tag }}
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v6
@@ -23,4 +34,5 @@ jobs:
         uses: softprops/action-gh-release@v3
         if: github.ref_type == 'tag'
         with:
+          tag_name: ${{ steps.tag.outputs.tag }}
           files: resume.pdf

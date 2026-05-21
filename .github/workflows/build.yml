@@ -23,8 +23,8 @@ jobs:
 
       - name: Create git tag
         run: |
-          git tag ${{ steps.tag.outputs.tag }}
-          git push origin ${{ steps.tag.outputs.tag }}
+          git tag "${{ steps.tag.outputs.tag }}"
+          git push origin "${{ steps.tag.outputs.tag }}"
 
       # - name: Upload artifacts
       #   uses: actions/upload-artifact@v6

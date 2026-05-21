@@ -2,6 +2,8 @@ name: Render typst resume
 
 on:
   push:
+    tags:
+      - '*'
 
 jobs:
   render:

@@ -35,6 +35,13 @@
             typstyle
             typstPackages.fontawesome
           ];
+
+          env = [
+            {
+              name = "TYPST_FONT_PATHS";
+              eval = "$DEVSHELL_DIR/share/fonts";
+            }
+          ];
         };
 
         formatter = pkgs.alejandra;

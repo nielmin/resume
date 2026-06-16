@@ -25,6 +25,9 @@
             }
           ];
           packages = with pkgs; [
+            atkinson-hyperlegible-next
+            atkinson-hyperlegible-mono
+
             font-awesome
             font-awesome_6
 

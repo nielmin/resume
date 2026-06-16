@@ -25,8 +25,12 @@
             }
           ];
           packages = with pkgs; [
+            font-awesome
+            font-awesome_6
+
             typst
             typstyle
+            typstPackages.fontawesome
           ];
         };
 

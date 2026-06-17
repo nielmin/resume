@@ -13,6 +13,25 @@ jobs:
         uses: actions/checkout@v6
 
       - uses: typst-community/setup-typst@v5
+
+      - name: Install Fonts
+        run: |
+          mkdir -p ~/.local/share/fonts
+          
+          # 1. Download Inter Font
+          wget -q https://github.com/rsms/inter/releases/download/v4.1/Inter-4.1.zip
+          unzip -q Inter-4.1.zip -d inter-font
+          cp inter-font/Inter*.ttf ~/.local/share/fonts/
+          
+          # 2. Download Font Awesome (Free Desktop OTF/TTF files)
+          # Note: If fontawesome package doesn't bundle the font files, we grab them here:
+          wget -q https://use.fontawesome.com/releases/v6.5.1/fontawesome-free-6.5.1-desktop.zip
+          unzip -q fontawesome-free-6.5.1-desktop.zip
+          cp fontawesome-free-6.5.1-desktop/otfs/*.otf ~/.local/share/fonts/
+          
+          # Refresh the system font cache
+          fc-cache -f -v
+
       - run: typst compile main.typ resume.pdf
       - run: typst compile letter.typ letter.pdf
 

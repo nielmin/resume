@@ -19,7 +19,7 @@ jobs:
       - name: Generate tag
         id: tag
         run: |
-          TAG=$(date +'%Y.%m.%d')
+          TAG=$(date +'%Y.%m.%d-%H:%M')
           echo "Generated tag: $TAG"
           echo "tag=$TAG" >> "$GITHUB_OUTPUT"
 

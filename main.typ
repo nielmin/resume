@@ -1,111 +1,34 @@
-#import "@preview/basic-resume:0.2.8": *
+#import "src/cv.typ": *
 
-// Put your personal information here, replacing mine
-#let name = "Daniel Hwang"
-#let location = "San Antonio, TX"
-#let email = "danhwa13@gmail.com"
-#let github = "github.com/nielmin"
-// #let linkedin = "linkedin.com/in/stuxf"
-#let phone = "+1 (210) 636-8489"
-#let personal-site = "nielmin.github.io"
-
-#show: resume.with(
-  author: name,
-  // All the lines below are optional. 
-  // For example, if you want to to hide your phone number:
-  // feel free to comment those lines out and they will not show.
-  location: location,
-  email: email,
-  github: github,
-  // linkedin: linkedin,
-  phone: phone,
-  personal-site: personal-site,
-  accent-color: "#26428b",
-  font: "New Computer Modern",
-  paper: "us-letter",
-  author-position: left,
-  personal-info-position: left,
+#set page(
+  "us-letter",
+  margin: (x: 0.5in, y: 0.5in)
 )
 
-/*
-* Lines that start with == are formatted into section headings
-* You can use the specific formatting functions if needed
-* The following formatting functions are listed below
-* #edu(dates: "", degree: "", gpa: "", institution: "", location: "")
-* #work(company: "", dates: "", location: "", title: "")
-* #project(dates: "", name: "", role: "", url: "")
-* #extracurriculars(activity: "", dates: "")
-* There are also the following generic functions that don't apply any formatting
-* #generic-two-by-two(top-left: "", top-right: "", bottom-left: "", bottom-right: "")
-* #generic-one-by-two(left: "", right: "")
-*/
-== Education
-
-#edu(
-  institution: "University of Texas at San Antonio",
-  location: "San Antonio, TX",
-  dates: dates-helper(start-date: "Aug 2021", end-date: "August 2024"),
-  degree: "Bachelor's of Science, Computer Science",
+#set text(
+  font: "Inter",
+  size: 11pt
 )
-- Cumulative GPA: 3.73\/4.0 | Dean's List, Honor Roll
 
-== Certifications
+#title(yaml("data/about.yaml"))
 
-#generic-one-by-two(left: "CCNA - Cisco Certified Network Associate", right: "March 2026")
+#certs(yaml("data/certs.yaml"))
 
-== Work Experience
+#edu(yaml("data/edu.yaml"))
 
-#work(
-  title: "Student Assistant",
-  location: "San Antonio, TX",
-  company: "Graduate School & Research Building, UTSA",
-  dates: dates-helper(start-date: "August 2021", end-date: "May 2023"),
-)
-- Built a PowerBI dashboard using HERD and IPEDS data with Python `pandas` and `numpy` libraries. 
+- Cumulative GPA: 3.73/4.0
+- Dean's List & Honor Roll
+
+#work(yaml("data/work.yaml"))
+
+- Built a PowerBI dashboard using HERD and IPEDS data with Python pandas and numpy libraries.
 - Responsible for the disposal and recording of sensitive financial documents pertaining to UTSA grants and scholarships.
-- Organized university documents to easily accessible to coworkers. 
+- Organized university documents to easily accessible to coworkers.
 
-== Projects
+#proj(yaml("data/projects.yaml"))
 
-#project(
-  name: "gryt",
-  url: "github.com/nielmin/gryt",
-)
-- A simple CLI app that converts a YouTube channel URL to an RSS feed.
 
-#project(
-  name: "NixOS Configuration",
-  url: "github.com/nielmin/nixos-config",
-)
-- Personal NixOS configuration for my desktop, laptop, and servers.
-- Infrastructure as Code (IaC) to declaratively reproduce my personal machines and dotfiles using the `nix` language and `home-manager`.
-
-#project(
-  name: "Personal website",
-  url: "github.com/nielmin/nielmin.github.io",
-)
-- A personal blog using `11ty`, a static site generator.
-
-#project(
-  name: "Fedora CoreOS",
-  url: "github.com/nielmin/fcos",
-)
-- A set of butane files that deploy either a Caddy or Traefik reverse proxy.
-- Automatic compliation of ignition files using GitHub Actions to bootstrap a CoreOS installer.
-
-#project(
-  name: "dotfiles",
-  url: "github.com/nielmin/dotfiles",
-)
-- Personal configurations for my development tools such as neovim, emacs, bash, tmux, etc..
-
-#project(
-  name: "resume",
-  url: "github.com/nielmin/resume",
-)
-- Personal resume written in typst.
-
-== Skills
+#skills()
 
 - *Programming Languages*: Go, Python, C, HTML/CSS, Bash
 - *Technologies*: Git, UNIX, Docker/Podman, Caddy, NGINX, Traefik

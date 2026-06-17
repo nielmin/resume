@@ -1,0 +1,28 @@
+name: Projects
+projects:
+  - name: gryt
+    link: github.com/nielmin/gryt
+    description:
+      - A simple CLI app that converts a YouTube URL to an RSS feed.
+  - name: NixOS Configuration
+    link: github.com/nielmin/nixos-config
+    description:
+      - Personal NixOS configuration for my desktop, laptops, and servers.
+      - Infrastructure as Code (IaC) to declaratively reproduce my configuration on any host.
+  - name: Personal Website
+    link: github.com/nielmin/nielmin.github.io
+    description:
+      - A personal blog using HTML, CSS, and 11ty, a popular static site generator.
+  - name: Fedora CoreOS
+    link: github.com/nielmin/fcos
+    description:
+      - A set of butane files to deploy various reverse proxies to a public VPS.
+      - CI/CD of ignition files using Github Actions to bootstrap the CoreOS installer.
+  - name: Personal dotfiles
+    link: github.com/nielmin/dotfiles
+    description:
+      - Custom configurations for various development tools such as neovim, emacs, bash, tmux, etc.
+  - name: Resume
+    link: github.com/nielmin/resume
+    description:
+      - Custom Typst templates for personal resume and cover letter.

@@ -33,7 +33,6 @@ jobs:
           fc-cache -f -v
 
       - run: typst compile main.typ resume.pdf
-      - run: typst compile letter.typ letter.pdf
 
       - name: Generate tag
         id: tag
@@ -54,4 +53,3 @@ jobs:
           tag_name: ${{ steps.tag.outputs.tag }}
           files: |
             resume.pdf 
-            letter.pdf

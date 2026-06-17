@@ -31,6 +31,8 @@
             font-awesome
             font-awesome_6
 
+            gelasio
+
             inter
 
             typst

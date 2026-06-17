@@ -29,14 +29,10 @@ jobs:
           git tag "${{ steps.tag.outputs.tag }}"
           git push origin "${{ steps.tag.outputs.tag }}"
 
-      # - name: Upload artifacts
-      #   uses: actions/upload-artifact@v6
-      #   with:
-      #     name: resume
-      #     path: resume.pdf
-
       - name: Release
         uses: softprops/action-gh-release@v3
         with:
           tag_name: ${{ steps.tag.outputs.tag }}
-          files: resume.pdf letter.pdf
+          files: |
+            resume.pdf 
+            letter.pdf

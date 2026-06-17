@@ -14,6 +14,7 @@ jobs:
 
       - uses: typst-community/setup-typst@v5
       - run: typst compile main.typ resume.pdf
+      - run: typst compile letter.typ letter.pdf
 
       - name: Generate tag
         id: tag
@@ -38,4 +39,4 @@ jobs:
         uses: softprops/action-gh-release@v3
         with:
           tag_name: ${{ steps.tag.outputs.tag }}
-          files: resume.pdf
+          files: resume.pdf letter.pdf

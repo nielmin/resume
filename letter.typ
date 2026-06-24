@@ -7,14 +7,14 @@
   [#link("https://github.com/nielmin")[#"github.com/nielmin"]],
   ),
   date: datetime.today().display(),
-  addressee-name: "University Police",
-  addressee-institution: "University of Texas of San Antonio",
-  addressee-address: "One UTSA Circle, Bosque Building",
+  addressee-name: "Labatt's IT Department",
+  addressee-institution: "Labatt Food Service",
+  addressee-address: "4618 Industry Park Drive",
   addressee-city: "San Antonio",
   addressee-state: "TX",
   addressee-country: "",
-  addressee-zip: "78249",
-  font: "New Computer Modern",
+  addressee-zip: "78218",
+  font: "Inter",
   font-size: 11pt,
   lang: "en",
   margin: (
@@ -25,19 +25,17 @@
   ),
 )
 
-I am excited to apply for the position of *Information Technology Associate* for UTSA's University Police.
-As an UTSA alumni, I recognize the importance of ensuring smooth operation of critical technology resources. especially around finales time.
+I am applying for the position of *Network Engineer* at Labatt.
 
-But what's more important than semester grades is ensuring the safety and health of our students and their futures.
-If students feel scared and unsafe on campus, then their growth and learning is hindered by such an environment.
-So it is imperative that the technological infrastructure should be upheld to a level where it is accessible and effortless for all students, regardless of background.
+While I majored in Computer Science at UTSA, I've always had an interest in networking.
+This curiosity resulted in a 6-month journey learning about how the Internet works, which then led to me passing the CCNA earlier this year in March.
 
-And I would be a great fit to fulfill these needs.
+Not only did I learn about how the different layers of the OSI model communicated with each other, I also acquired some hands-on networking experience, albeit on a small scale: I took responsibility for my family's home network.
 
-Not only does my BS. in Computer Science degree give me a fundamental knowledge of software, my CCNA certification gave real world experience on the hardware aspect too.
-Furthermore, my general interest in computers has led to a me hosting various programs and services on my own hardware, further solidifying the knowledge I had to learn in order to pass the CCNA. 
+I replaced the main router's stock firmware with #link("https://openwrt.org")[OpenWRT], a custom Linux-based operating system for consumer routers, in order to get more granular control.
+I then set up a recursive DNS server and adblocker, and forwarded all local traffic through it in order to keep my family safe from various online threats.
 
+But there is only so much I can learn by messing around on my LAN.
+I believe that working at Labatt will help me further grow and apply what I learned, while also helping out a larger community and purpose.
 
-I believe my qualifications will serve the University Polica (and UTSA as a whole) in providing a safe and nuturing enviroment where students can focus on their growth and learning, and not worry about losing access to a resource because of poor infrastructure.
-
-I appreciate your consideration and hope to meet you soon.
+I appreciate your time and hope to hear from you soon.

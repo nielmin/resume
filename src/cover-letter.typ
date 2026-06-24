@@ -53,7 +53,7 @@ https://github.com/AbdullahHendy/clickworthy-resume/blob/main/src/cover-letter.t
   
   // Author
   align(center)[
-    #block(text(weight: 700, 2.5em, [#smallcaps(author)]))
+    #block(text(weight: 700, 2em, [#smallcaps(author)]))
   ]
 
   // Contact Information

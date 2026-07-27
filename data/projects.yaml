@@ -3,7 +3,7 @@ projects:
   - name: gryt
     link: github.com/nielmin/gryt
     description:
-      - A simple CLI app that converts a YouTube URL to an RSS feed.
+      - Simple CLI app that converts a YouTube URL to an RSS feed.
   - name: NixOS Configuration
     link: github.com/nielmin/nixos-config
     description:
@@ -12,11 +12,11 @@ projects:
   - name: Personal Website
     link: github.com/nielmin/nielmin.github.io
     description:
-      - A personal blog using HTML, CSS, and 11ty, a popular static site generator.
+      - Personal blog using HTML, CSS, and 11ty.
   - name: Fedora CoreOS
     link: github.com/nielmin/fcos
     description:
-      - A set of butane files to deploy various reverse proxies to a public VPS.
+      - Set of butane files to deploy various reverse proxies to a public VPS.
       - CI/CD of ignition files using Github Actions to bootstrap the CoreOS installer.
   - name: Personal dotfiles
     link: github.com/nielmin/dotfiles

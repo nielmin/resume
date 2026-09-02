@@ -12,7 +12,7 @@
 
 #show heading: set block(
   above: 0.8em,
-  below: 0.8em,
+  below: 0.5em,
 )
 
 #title(yaml("data/about.yaml"))

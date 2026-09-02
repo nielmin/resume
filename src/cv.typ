@@ -71,6 +71,7 @@
   = #contents.name
   #custom-line
 
+  #set par(spacing: 0.64em)
   #for project in contents.projects [
     *#project.name*
     #link("https://" + project.link)[#fa-icon("link")]

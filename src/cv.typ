@@ -3,6 +3,7 @@
 #let accent = navy
 
 #let link-accent = blue
+#let custom-line = line(length: 100%, stroke: 2pt + accent)
 
 #let title(user) = {
   show link: set text(link-accent)
@@ -29,7 +30,7 @@
 
 #let edu(edu) = {
   [= #edu.name]
-  line(length: 100%, stroke: 2pt + accent)
+  custom-line
   grid(
       columns: (2fr, auto),
       gutter: 1em,
@@ -48,7 +49,7 @@
 
 #let work(work) = {
   [= #work.name]
-  line(length: 100%, stroke: 2pt + accent)
+  custom-line
   grid(
       columns: (2fr, auto),
       gutter: 1em,
@@ -68,7 +69,7 @@
 #let proj(contents) = [
   #show link: set text(link-accent)
   = #contents.name
-  #line(length: 100%, stroke: 2pt + accent)
+  #custom-line
 
   #for project in contents.projects [
     *#project.name*
@@ -83,17 +84,14 @@
 
 #let certs(contents) = {
   [= Certifications]
-  line(length: 100%, stroke: 2pt + accent)
+  custom-line
   grid(
       columns: (2fr, auto),
       gutter: 1em,
       align(left + horizon)[
-        #text(weight:"semibold",14pt, contents.name)
-        #linebreak()
         #text(12pt, weight:"medium", style:"italic", contents.title)
       ],
       align(right + horizon)[
-        #linebreak()
         #text(style:"italic",contents.date)
       ]
   )
@@ -101,5 +99,5 @@
 
 #let skills() = {
   [= Skills]
-  line(length: 100%, stroke: 2pt + accent)
+  custom-line
 }

@@ -1,9 +1,19 @@
 name: Projects
 projects:
-  - name: gryt
-    link: github.com/nielmin/gryt
+  # - name: gryt
+  #   link: github.com/nielmin/gryt
+  #   description:
+  #     - Simple CLI app that converts a YouTube URL to an RSS feed.
+  - name: NixOS
+    link: github.com/NixOS/nixpkgs
+    prs:
+      - https://github.com/cbrgm/gopodder
+      - https://github.com/NixOS/nixpkgs/pull/557599
+      - https://github.com/NixOS/nixpkgs/pull/519517
     description:
-      - Simple CLI app that converts a YouTube URL to an RSS feed.
+      - OSS contributions to NixOS project.
+      - Maintainer of cbrgm/gopodder package.
+      - Fix typos in project documentation
   - name: NixOS Configuration
     link: github.com/nielmin/nixos-config
     description:
@@ -18,11 +28,11 @@ projects:
     description:
       - Set of butane files to deploy various reverse proxies to a public VPS.
       - CI/CD of ignition files using Github Actions to bootstrap the CoreOS installer.
-  - name: Personal dotfiles
-    link: github.com/nielmin/dotfiles
-    description:
-      - Custom configurations for various development tools such as neovim, emacs, bash, tmux, etc.
-  - name: Resume
-    link: github.com/nielmin/resume
-    description:
-      - Custom Typst templates for personal resume and cover letter.
+  # - name: Personal dotfiles
+  #   link: github.com/nielmin/dotfiles
+  #   description:
+  #     - Custom configurations for various development tools such as neovim, emacs, bash, tmux, etc.
+  # - name: Resume
+  #   link: github.com/nielmin/resume
+  #   description:
+  #     - Custom Typst templates for personal resume and cover letter.

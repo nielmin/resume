@@ -10,25 +10,29 @@
   size: 11pt
 )
 
+#show heading: set block(
+  above: 0.8em,
+  below: 0.8em,
+)
+
 #title(yaml("data/about.yaml"))
-
-#edu(yaml("data/edu.yaml"))
-
-- Cumulative GPA: 3.73/4.0
-- Dean's List & Honor Roll
 
 #work(yaml("data/work.yaml"))
 
 - Built a PowerBI dashboard using HERD and IPEDS data with Python pandas and numpy libraries.
 - Responsible for the disposal and recording of sensitive financial documents pertaining to UTSA grants and scholarships.
-- Organized university documents to easily accessible to coworkers.
+- Organized university documents to be easily accessible to coworkers.
 
-#certs(yaml("data/certs.yaml"))
+#edu(yaml("data/edu.yaml"))
+
+- Cumulative GPA: 3.7/4.0
+- Dean's List & Honor Roll
 
 #proj(yaml("data/projects.yaml"))
 
-#skills()
+#certs(yaml("data/certs.yaml"))
 
+#skills()
 - *Programming Languages*: Go, Python, C, HTML/CSS, Bash
 - *Technologies*: Git, UNIX, Docker/Podman, Caddy, NGINX, Traefik
 - *Virtualization*: QEMU/KVM, Proxmox, LXC

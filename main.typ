@@ -6,7 +6,7 @@
 )
 
 #set text(
-  font: "Inter",
+  font: "lato",
   size: 11pt
 )
 
@@ -19,21 +19,25 @@
 
 #work(yaml("data/work.yaml"))
 
-- Built a PowerBI dashboard using HERD and IPEDS data with Python pandas and numpy libraries.
-- Responsible for the disposal and recording of sensitive financial documents pertaining to UTSA grants and scholarships.
-- Organized university documents to be easily accessible to coworkers.
+- Built a PowerBI dashboard using HERD and IPEDS data with Python `pandas` and `numpy` libraries.
+- Responsible for the recording and disposal of sensitive financial documents pertaining to UTSA grants and scholarships.
+// - Organized university documents to be easily accessible to coworkers.
+- Check team documents in Word and Excel for any mistakes before delivering in Microsoft Teams.
 
 #edu(yaml("data/edu.yaml"))
 
-- Cumulative GPA: 3.7/4.0
+- Cumulative GPA: 3.73/4.0
 - Dean's List & Honor Roll
 
-#proj(yaml("data/projects.yaml"))
+// #proj(yaml("data/projects.yaml"))
 
 #certs(yaml("data/certs.yaml"))
 
 #skills()
-- *Programming Languages*: Go, Python, C, HTML/CSS, Bash
-- *Technologies*: Git, UNIX, Docker/Podman, Caddy, NGINX, Traefik
-- *Virtualization*: QEMU/KVM, Proxmox, LXC
-- *Networking*: NFS, Samba/CIFS, DNS
+- *Office Suites*: Microsoft Word, Excel, Publisher
+- *Databases*: MySQL
+- *Data Science*: Python, PowerBI
+// - *Programming Languages*: Go, Python, C, HTML/CSS, Bash
+// - *Technologies*: Git, UNIX, Docker/Podman, Caddy, NGINX, Traefik
+// - *Virtualization*: QEMU/KVM, Proxmox, LXC
+// - *Networking*: NFS, Samba/CIFS, DNS

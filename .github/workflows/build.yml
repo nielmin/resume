@@ -22,22 +22,24 @@ jobs:
 
       - name: Install Fonts
         run: |
-          mkdir -p ~/.local/share/fonts
+          mkdir -p ~/.local/share/fonts/inter
+          mkdir -p ~/.local/share/fonts/lato
+          mkdir -p ~/.local/share/fonts/fontawesome
           
-          # 1. Download Inter Font
-          wget -q https://github.com/rsms/inter/releases/download/v4.1/Inter-4.1.zip
-          unzip -q Inter-4.1.zip -d inter-font
-          cp inter-font/Inter*.ttf ~/.local/share/fonts/
-          
-          # 2. Download Font Awesome (Free Desktop OTF/TTF files)
-          # Note: If fontawesome package doesn't bundle the font files, we grab them here:
-          wget -q https://use.fontawesome.com/releases/v6.5.1/fontawesome-free-6.5.1-desktop.zip
-          unzip -q fontawesome-free-6.5.1-desktop.zip
-          cp fontawesome-free-6.5.1-desktop/otfs/*.otf ~/.local/share/fonts/
-          
-          wget -q -O lato.zip "https://fonts.google.com/download?family=Lato"
-          unzip -q lato.zip -d lato
-          cp lato/*.ttf ~/.local/share/fonts/
+          # 1. Inter Font (Official google/fonts repository)
+          curl -sSL "https://raw.githubusercontent.com/google/fonts/main/ofl/inter/Inter%5Bopsz,wght%5D.ttf" -o ~/.local/share/fonts/inter/Inter.ttf
+          curl -sSL "https://raw.githubusercontent.com/google/fonts/main/ofl/inter/Inter-Italic%5Bopsz,wght%5D.ttf" -o ~/.local/share/fonts/inter/Inter-Italic.ttf
+
+          # 2. Lato Font (Official google/fonts repository)
+          curl -sSL "https://raw.githubusercontent.com/google/fonts/main/ofl/lato/Lato-Regular.ttf" -o ~/.local/share/fonts/lato/Lato-Regular.ttf
+          curl -sSL "https://raw.githubusercontent.com/google/fonts/main/ofl/lato/Lato-Bold.ttf" -o ~/.local/share/fonts/lato/Lato-Bold.ttf
+          curl -sSL "https://raw.githubusercontent.com/google/fonts/main/ofl/lato/Lato-Italic.ttf" -o ~/.local/share/fonts/lato/Lato-Italic.ttf
+          curl -sSL "https://raw.githubusercontent.com/google/fonts/main/ofl/lato/Lato-BoldItalic.ttf" -o ~/.local/share/fonts/lato/Lato-BoldItalic.ttf
+
+          # 3. Font Awesome (Official FontAwesome GitHub releases)
+          curl -sSL "https://github.com/FortAwesome/Font-Awesome/raw/6.x/webfonts/fa-solid-900.ttf" -o ~/.local/share/fonts/fontawesome/fa-solid-900.ttf
+          curl -sSL "https://github.com/FortAwesome/Font-Awesome/raw/6.x/webfonts/fa-brands-400.ttf" -o ~/.local/share/fonts/fontawesome/fa-brands-400.ttf
+          curl -sSL "https://github.com/FortAwesome/Font-Awesome/raw/6.x/webfonts/fa-regular-400.ttf" -o ~/.local/share/fonts/fontawesome/fa-regular-400.ttf
 
           # Refresh the system font cache
           fc-cache -f -v

@@ -29,22 +29,25 @@
 }
 
 #let edu(edu) = {
-  [= #edu.name]
+  [= Education]
   custom-line
   grid(
     columns: (2fr, auto),
     gutter: 1em,
     align(left + horizon)[
-      #text(weight: "semibold", 14pt, edu.college)
+      #text(weight: "semibold", 14pt, edu.bachelors.college)
       #linebreak()
-      #text(12pt, weight: "medium", style: "italic", edu.degree)
+      #text(12pt, weight: "medium", style: "italic", edu.bachelors.degree)
     ],
     align(right + horizon)[
-      #text(style: "italic", edu.years)
+      #text(style: "italic", edu.bachelors.years)
       #linebreak()
-      #text(edu.location)
+      #text(edu.bachelors.location)
     ],
   )
+  for (i) in edu.bachelors.desc [
+    - #i
+  ]
 }
 
 #let work(work) = {

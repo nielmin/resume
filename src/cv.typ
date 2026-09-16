@@ -82,19 +82,28 @@
       ]
     ]
   ]
+]
 
 #let certs(contents) = {
   [= Certifications]
   custom-line
   grid(
-      columns: (2fr, auto),
-      gutter: 1em,
-      align(left + horizon)[
-        #text(12pt, weight:"medium", style:"italic", contents.title)
-      ],
-      align(right + horizon)[
-        #text(style:"italic",contents.date)
+    columns: (2fr, auto),
+    gutter: 1em,
+    align(left + horizon)[
+      #text(12pt, weight: "medium")[#contents.title]
+      #if "abbr" in contents and contents.abbr != "" [
+        (#text(12pt, weight: "medium")[#contents.abbr])
       ]
+    ],
+    align(right + top)[
+      #text(style: "italic", contents.issuer)
+    ],
+  )
+  list(
+    if "id" in contents and contents.id != "" [CSCO ID: #contents.id],
+    if "expires" in contents
+      and contents.expires != "" [Expires: #contents.expires],
   )
 }
 

@@ -9,22 +9,22 @@
   show link: set text(link-accent)
 
   grid(
-      columns: (2fr, auto),
-      gutter: 1em,
-      align(left + horizon)[
-        #text(22pt, fill: accent, weight: "bold", user.author)
-        #linebreak()
-        #fa-icon("github") #link(user.github)[GitHub]
-        #linebreak()
-        #fa-icon("globe") #link(user.site)[Website]
-      ],
-      align(left + horizon)[
-        #fa-icon("location-dot") #text(user.location)
-        #linebreak()
-        #fa-icon("phone") #text(user.phone)
-        #linebreak()
-        #fa-icon("envelope") #link("mailto:" + user.email)
-      ]
+    columns: (2fr, auto),
+    gutter: 1em,
+    align(left + horizon)[
+      #text(22pt, fill: accent, weight: "bold", user.author)
+      #linebreak()
+      #fa-icon("github") #link(user.github)[GitHub]
+      #linebreak()
+      #fa-icon("globe") #link(user.site)[Website]
+    ],
+    align(left + horizon)[
+      #fa-icon("location-dot") #text(user.location)
+      #linebreak()
+      #fa-icon("phone") #text(user.phone)
+      #linebreak()
+      #fa-icon("envelope") #link("mailto:" + user.email)
+    ],
   )
 }
 
@@ -32,18 +32,18 @@
   [= #edu.name]
   custom-line
   grid(
-      columns: (2fr, auto),
-      gutter: 1em,
-      align(left + horizon)[
-        #text(weight:"semibold",14pt, edu.college)
-        #linebreak()
-        #text(12pt, weight:"medium", style: "italic", edu.degree)
-      ],
-      align(right + horizon)[
-        #text(style:"italic", edu.years)
-        #linebreak()
-        #text(edu.location)
-      ]
+    columns: (2fr, auto),
+    gutter: 1em,
+    align(left + horizon)[
+      #text(weight: "semibold", 14pt, edu.college)
+      #linebreak()
+      #text(12pt, weight: "medium", style: "italic", edu.degree)
+    ],
+    align(right + horizon)[
+      #text(style: "italic", edu.years)
+      #linebreak()
+      #text(edu.location)
+    ],
   )
 }
 
@@ -51,18 +51,18 @@
   [= #work.name]
   custom-line
   grid(
-      columns: (2fr, auto),
-      gutter: 1em,
-      align(left + horizon)[
-        #text(weight:"semibold",14pt, work.position)
-        #linebreak()
-        #text(12pt, weight:"medium", style:"italic", work.company)
-      ],
-      align(right + horizon)[
-        #text(style:"italic",work.years)
-        #linebreak()
-        #text(work.location)
-      ]
+    columns: (2fr, auto),
+    gutter: 1em,
+    align(left + horizon)[
+      #text(weight: "semibold", 14pt, work.position)
+      #linebreak()
+      #text(12pt, weight: "medium", style: "italic", work.company)
+    ],
+    align(right + horizon)[
+      #text(style: "italic", work.years)
+      #linebreak()
+      #text(work.location)
+    ],
   )
 }
 
@@ -78,8 +78,7 @@
     #h(1fr)
 
     #for item in project.description [
-    - #item
-      ]
+      - #item
     ]
   ]
 ]

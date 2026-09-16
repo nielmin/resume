@@ -1,6 +1,11 @@
 name: Build typst resume
 
-on: push
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'main.typ'
 
 permissions:
   contents: write

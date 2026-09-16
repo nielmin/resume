@@ -50,15 +50,9 @@ jobs:
           echo "Generated tag: $TAG"
           echo "tag=$TAG" >> "$GITHUB_OUTPUT"
 
-      - name: Create git tag
-        run: |
-          echo "${{ steps.tag.outputs.tag }}"
-          git tag "${{ steps.tag.outputs.tag }}"
-          git push origin "${{ steps.tag.outputs.tag }}"
-
       - name: Release
         uses: softprops/action-gh-release@v3
         with:
           tag_name: ${{ steps.tag.outputs.tag }}
           files: |
-            resume.pdf 
+            resume.pdf

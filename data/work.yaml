@@ -1,5 +1,16 @@
-name: Work Experience
-location: San Antonio, TX
-position: Student Assistant
-company: Graduate School & Research Building, UTSA
-years: Aug 2021 - May 2023
+job02:
+  position: Student Assistant I
+  location: San Antonio, TX
+  company: Institutional Research, UTSA
+  years: Sept 2022 - May 2024
+  description:
+    - Built a PowerBI dashboard using HERD and IPEDS data with Python pandas and numpy libraries.
+    - Review team documents in Word and Excel for mistakes before delivering in Microsoft Teams.
+job01:
+  position: Student Assistant I
+  location: San Antonio, TX
+  company: Research Finance and Ops Office, UTSA
+  years: Sept 2021 - June 2022
+  description:
+    - Responsible for the recording and disposal of sensitive financial documents pertaining to UTSA grants and scholarships.
+    - Organized university documents to be easily accessible to coworkers.

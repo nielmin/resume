@@ -8,25 +8,34 @@
     flake-parts.lib.mkFlake {inherit inputs;}
     {
       systems = ["x86_64-linux"];
-      perSystem = {pkgs, ...}: {
+      perSystem = {pkgs, ...}: let
+        fonts = with pkgs; [
+          atkinson-hyperlegible-next
+          atkinson-hyperlegible-mono
+          gelasio
+          font-awesome
+          font-awesome_6
+          inter
+          lato
+        ];
+
+        fontsConf = pkgs.makeFontsConf {
+          fontDirectories = fonts;
+        };
+      in {
         devShells.default = pkgs.mkShellNoCC {
-          packages = with pkgs; [
-            atkinson-hyperlegible-next
-            atkinson-hyperlegible-mono
+          packages = with pkgs;
+            [
+              harper
+              typst
+              typstyle
+              typstPackages.fontawesome
+            ]
+            ++ fonts;
 
-            font-awesome
-            font-awesome_6
-
-            harper
-
-            gelasio
-
-            inter
-
-            typst
-            typstyle
-            typstPackages.fontawesome
-          ];
+          shellHook = ''
+            export FONTCONFIG_FILE="${fontsConf}"
+          '';
         };
 
         formatter = pkgs.alejandra;

@@ -1,0 +1,32 @@
+office:
+  Microsoft Office:
+    - Word
+    - Excel
+    - PowerPoint
+  Databases:
+    - MySQL
+  Data Science:
+    - Python
+    - PowerBI
+tech:
+  Programming Languages:
+    - Go
+    - Python
+    - C
+    - HTML/CSS
+    - Bash
+  Dev Tools:
+    - Git
+    - UNIX
+    - Docker/Podman
+    - Caddy
+    - NGINX
+    - Traefik
+  Virtualization:
+    - QEMU/KVM
+    - Proxmox
+    - LXC
+  Networking:
+    - NFS
+    - Samba/CIFS
+    - DNS

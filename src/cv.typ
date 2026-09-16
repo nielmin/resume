@@ -114,7 +114,13 @@
   )
 }
 
-#let skills() = {
+#let skills(data, category) = {
   [= Skills]
   custom-line
+
+  if category == "office" and data.office != "" [
+    #for (key, item) in data.office [
+      - *#key*: #item.join(", ")
+    ]
+  ]
 }

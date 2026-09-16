@@ -51,22 +51,27 @@
 }
 
 #let work(work) = {
-  [= #work.name]
+  [= Work Experience]
   custom-line
-  grid(
-    columns: (2fr, auto),
-    gutter: 1em,
-    align(left + horizon)[
-      #text(weight: "semibold", 14pt, work.position)
-      #linebreak()
-      #text(12pt, weight: "medium", style: "italic", work.company)
-    ],
-    align(right + horizon)[
-      #text(style: "italic", work.years)
-      #linebreak()
-      #text(work.location)
-    ],
-  )
+
+  for (key, job) in work [
+    #grid(
+      columns: (1fr, auto),
+      align(left)[
+        #text(weight: "semibold", 12pt, job.position) \
+        #text(weight: "medium", style: "italic", job.company)
+      ],
+      align(right)[
+        #text(style: "italic", job.years) \
+        #text(job.location)
+      ],
+    )
+    #if "description" in job [
+      #v(-0.2em)
+      #list(..job.description)
+    ]
+    #v(0.5em)
+  ]
 }
 
 #let proj(contents) = [

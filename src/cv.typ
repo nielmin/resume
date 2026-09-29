@@ -118,6 +118,12 @@
   [= Skills]
   custom-line
 
+
+  if category == "tech" and data.tech != "" [
+    #for (key, item) in data.tech [
+      - *#key*: #item.join(", ")
+    ]
+  ]
   if category == "office" and data.office != "" [
     #for (key, item) in data.office [
       - *#key*: #item.join(", ")

@@ -1,5 +1,7 @@
 #import "src/cv.typ": *
 
+#let profile = sys.inputs.at("profile", default: "office")
+
 #set page(
   "us-letter",
   margin: (x: 0.5in, y: 0.5in)
@@ -23,8 +25,14 @@
 
 #edu(yaml("data/edu.yaml"))
 
-// #proj(yaml("data/projects.yaml"))
+#if profile == "tech" [
+  #proj(yaml("data/projects.yaml"))
+]
 
 #certs(yaml("data/certs.yaml"))
 
-#skills(yaml("data/skills.yaml"), "office")
+#if profile == "office" [
+  #skills(yaml("data/skills.yaml"),"office")
+] else [
+  #skills(yaml("data/skills.yaml"),"tech")
+]

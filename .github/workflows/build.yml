@@ -45,7 +45,9 @@ jobs:
           # Refresh the system font cache
           fc-cache -f -v
 
-      - run: typst compile main.typ resume.pdf
+      - run: typst compile --input profile=tech main.typ office-resume.pdf
+
+      - run: typst compile --input profile=office main.typ tech-resume.pdf
 
       - name: Generate tag
         id: tag
@@ -59,4 +61,5 @@ jobs:
         with:
           tag_name: ${{ steps.tag.outputs.tag }}
           files: |
-            resume.pdf
+            office-resume.pdf
+            tech-resume.pdf

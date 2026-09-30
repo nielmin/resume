@@ -1,9 +1,5 @@
 name: Projects
 projects:
-  # - name: gryt
-  #   link: github.com/nielmin/gryt
-  #   description:
-  #     - Simple CLI app that converts a YouTube URL to an RSS feed.
   - name: NixOS
     link: github.com/NixOS/nixpkgs
     prs:
@@ -28,10 +24,10 @@ projects:
     description:
       - Set of butane files to deploy various reverse proxies to a public VPS.
       - CI/CD of ignition files using Github Actions to bootstrap the CoreOS installer.
-  # - name: Personal dotfiles
-  #   link: github.com/nielmin/dotfiles
-  #   description:
-  #     - Custom configurations for various development tools such as neovim, emacs, bash, tmux, etc.
+  - name: Personal dotfiles
+    link: github.com/nielmin/dotfiles
+    description:
+      - Custom configurations for various development tools such as neovim, emacs, bash, tmux, etc.
   # - name: Resume
   #   link: github.com/nielmin/resume
   #   description:

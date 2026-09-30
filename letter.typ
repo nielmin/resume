@@ -1,7 +1,7 @@
 #import "src/cover-letter.typ": *
 #show: cover-letter.with(
-  author: "",
-  location: "",
+  author: "Daniel Hwang",
+  location: "San Antonio, Texas",
   contacts: (
   [#link("mailto:danhwa13@gmail.com")[#"danhwa13@gmail.com"]],
   "",

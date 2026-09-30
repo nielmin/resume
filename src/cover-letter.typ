@@ -3,13 +3,14 @@
   location: "",
   contacts: (),
   date: datetime.today().display("[month repr:long] [day], [year]"),
-  company-name: "",
-  company-institution: "",
-  company-address: "",
-  company-city: "",
-  company-state: "",
-  company-country: "",
-  company-zip: "",
+  addressee-name: "",
+  addressee-institution: "",
+  addressee-department: "",
+  addressee-address: "",
+  addressee-city: "",
+  addressee-state: "",
+  addressee-country: "",
+  addressee-zip: "",
   font: "New Computer Modern",
   font-size: 11pt,
   lang: "en",
@@ -72,16 +73,19 @@
     ]
   )
 
-  // company Information
+  // addressee Information
   pad(
     bottom: 1em,
-    left: 1em,
     align(left)[
-      #strong[#company-name] \
-      #company-institution \
-      #company-address \
-      #{company-city + ", " + company-state + " " + company-zip} \
-      #company-country
+      #strong[#addressee-name] \
+      #addressee-institution \
+      #if addressee-department != "" {
+        addressee-department
+        linebreak()
+      }
+      #addressee-address \
+      #{addressee-city + ", " + addressee-state + " " + addressee-zip} \
+      #addressee-country
     ]
   )
 

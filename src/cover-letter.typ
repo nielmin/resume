@@ -1,25 +1,15 @@
-/*
-Core formatting for the cover letter template document type. Establishes general document-wide formatting, and creates the header for the cover letter.
-
-Inspired by the template from the following guide:
-https://career.engin.umich.edu/sample-cover-letter/
-
-
-https://github.com/AbdullahHendy/clickworthy-resume/blob/main/src/cover-letter.typ
-*/
-
 #let cover-letter(
   author: "",
   location: "",
   contacts: (),
-  date: datetime.today().display(),
-  addressee-name: "",
-  addressee-institution: "",
-  addressee-address: "",
-  addressee-city: "",
-  addressee-state: "",
-  addressee-country: "",
-  addressee-zip: "",
+  date: datetime.today().display("[month repr:long] [day], [year]"),
+  company-name: "",
+  company-institution: "",
+  company-address: "",
+  company-city: "",
+  company-state: "",
+  company-country: "",
+  company-zip: "",
   font: "New Computer Modern",
   font-size: 11pt,
   lang: "en",
@@ -44,48 +34,54 @@ https://github.com/AbdullahHendy/clickworthy-resume/blob/main/src/cover-letter.t
   )
 
   set page(
-    margin: margin,
+    margin: 0.75in,
   )
 
   show link: set text(
     fill: rgb("#0645AD")
   )
   
-  // Author
-  align(center)[
-    #block(text(weight: 700, 2em, [#smallcaps(author)]))
-  ]
+  columns(2, gutter: 8pt)[
+    // Author
+    #align(left)[
+      #block(text(weight: 700, 2em, [#smallcaps(author)]))
+      #[#contacts.join("  |  ")]
 
-  // Contact Information
-  align(center)[
-    #[#contacts.join("  |  ")]
-  ]
-
-  // Location
-  if location != "" {
-    align(center)[
-      #smallcaps[#location]
     ]
-  }
+
+    #colbreak()
+
+    #align(right)[
+      #if location != "" {
+        smallcaps[#location]
+      }
+    ]
+  ]
+
+  line(
+      length: 100%,
+      stroke: 2pt
+    )
 
   // Date
   pad(
     top: 1em,
     bottom: 0.5em,
     align(left)[
-      #strong()[#date]
+      #strong[#date]
     ]
   )
 
-  // Addressee Information
+  // company Information
   pad(
     bottom: 1em,
+    left: 1em,
     align(left)[
-      #strong[#addressee-name] \
-      #addressee-institution \
-      #addressee-address \
-      #{addressee-city + ", " + addressee-state + " " + addressee-zip} \
-      #addressee-country
+      #strong[#company-name] \
+      #company-institution \
+      #company-address \
+      #{company-city + ", " + company-state + " " + company-zip} \
+      #company-country
     ]
   )
 
